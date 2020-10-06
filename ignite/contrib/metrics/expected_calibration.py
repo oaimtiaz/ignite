@@ -1,10 +1,11 @@
 import math
+
 import numpy as np
 import torch
+from torch import nn
 
 from ignite.metrics import Metric
-from ignite.metrics.metric import sync_all_reduce, reinit__is_reduced
-from torch import nn
+from ignite.metrics.metric import reinit__is_reduced, sync_all_reduce
 
 
 class ECE(Metric):
